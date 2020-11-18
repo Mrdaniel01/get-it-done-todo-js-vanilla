@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheet/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="./images/favicons/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
   <title>Get it Done</title>
 </head>
@@ -49,7 +50,41 @@
   </div>
 
   <section id="main">
+    <article id="headers" class="black">
+      <header>
+        <h1>To Do App</h1>
+        <h2>It helps you GET IT DONE!</h2>
+      </header>
+      <header>
+        <div>
+          <h3>Total Tasks</h3>
+          <h4 id="total">0</h4>
+        </div>
+        <div>
+          <h3>Completed</h3>
+          <h4 id="completed">0</h4>
+        </div>
+      </header>
+    </article>
+
+    <article id="input-section" class="black">
+      <input type="text" id="task-input"  placeholder="Create Task">
+      <label >Press enter to create a task!</label>
+    </article>
+
+    <ul id="task-list" class="bold">
+      <li>Do Stuff</li>
+      <li>Do Stuff</li>
+      <li>Do Stuff</li>
+      <li>Do Stuff</li>
+    </ul>
   </section>
+
+  <dialog id="modal" >
+    <h2 class="bold">This will reset all associeted data. <br>Are you sure?</h2>
+    <button class="black">Yes</button>
+    <button class="black">No</button>
+  </dialog>
 
   <script src="./js/data_format.js"></script>
   <script src="./js/storage.js"></script>
